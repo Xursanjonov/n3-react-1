@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, button { cursor: pointer; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+img { object-fit: contain; }
+
+/* Header */
+.top {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: sticky;
+    padding: 1rem 5rem;
+    background-color: white;
+    justify-content: space-between;
+    display: flex; align-items: center;
+}
+.top .start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.start h3 {
+    font-size: 1.6rem;
+}
+.start input {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.3rem;
+}
+.center a {
+    font-size: 1.2rem;
+    color: #000;
+}
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    font-size: 1.2rem;
+}
+/* Header end */
+
+/* Hero */
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1F1F1;
+}
+.bottom .bottom-img {
+    width: 50%;
+}
+.bottom-img .hero-bg-img {
+    width: 51.5rem;
+    height: 29.4375rem;
+}
+.bottom-title {
+    padding: 0 8rem 0 0;
+    text-align: center;
+}
+/* Hero end */
+
+/* Category */
+.category-container {
+    max-width: 1350px;
+    display: flex;
+    margin: 3rem auto 0;
+    padding: 2rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-div {
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.img-div:hover { box-shadow: 0 0 12px black; }
+.div-img {
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.div-title {
+    text-align: center;
+    margin: 1rem auto;
+}
+.img {
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+}
+/* Category end */
+
+/* Product */
+#products {
+    margin: 2rem 5rem;
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Open Sans";
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+.product-container {
+    /* max-width: 1600px; */
+    /* min-width: 370px; */
+    margin: 0 4rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.2rem;
+}
+.product-img {
+    width: 26.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 3.3125rem 3.3125rem 2.1875rem 3.25rem;
+}
+.product-div {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.product-div-title {
+    margin-top: 1rem;
+}
+.product-div-text {
+    margin-top: 1rem;
+}
+.product-div-text, .product-div-title {
+    font-size: 1.2rem;
+}
+.product-div:hover {
+    box-shadow: 0 0 12px black;
+}
+.img-product {
+    width: 19.6875rem;
+    height: 11.5rem;
+}
+.product-btn {
+    margin: .6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+.product-btn .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 0.625rem;
+    background: #DB9969;
+    padding: 0.375rem 2.375rem 0.375rem 2.4375rem;
+    font-size: 1.1rem
+}
+.btn {
+    margin-top: 1rem;
+}
+.btn:hover {
+    background-color: orange;
+    box-shadow: 0 0 8px yellow;
+}
+/* Product end */
+
+/* Подпишитесь */
+.Подпишитесь {
+    width: 90rem;
+    height: 17.875rem;
+    margin: 0 auto;
+    gap: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.section3-title {
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.80);
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+.email {
+    width: 33.25rem;
+    height: 2.9375rem;
+    padding: .3rem 1rem;
+    border-radius: 0.625rem;
+    font-family: Arial;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-feature-settings: 'clig' off, 'liga' off;
+    color: gray;
+}
+.section3-btn {
+    align-items: center;
+    display: inline-flex;
+    background: #DB9969;
+    justify-content: center;
+    border-radius: 0.625rem;
+    padding: 0.75rem 3.3125rem 0.75rem 3.25rem;
+}
+/* Подпишитесь end */
+
+/* Footer */
+.footer {
+    color: white;
+    display: grid;
+    padding: 2.5rem 5rem;
+    background-color: #B3A094;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    line-height: 1.4rem;
+}
+.footer-end {
+    margin: 0 0 0 12rem;
+}
+.footer-icons {
+    width: 11rem;
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Footer end */
